@@ -24,7 +24,7 @@ namespace Conditionals
             Console.WriteLine("");
             // intialisations
 
-            health = 100;
+            health = 70;
             damage = 10;
 
            
@@ -49,6 +49,19 @@ namespace Conditionals
         static void ShowHUD()
         {
             Console.WriteLine("player health" + " " + health);
-        }
+
+            if (health ==100) 
+            {
+                Console.WriteLine("perfect health");
+            }
+
+            if ((health >=76 && health <=99))
+            {
+                Console.WriteLine("healthy");
+            }
+
+            if ((health >=51 && health <=76)) ;
+
+        } //   >greator than        <less than
     }   
 }
